@@ -294,6 +294,16 @@ h6 { font-size: 16px; }
 	border-bottom: 1px solid rgba(255,255,255,.1);
 	padding: 10px 20px 10px 20px;
 }
+
+.foliox_tm_mobile_menu .dropdown .dropdown_inner ul li.lang {
+	margin-left: 10px;
+}
+
+.foliox_tm_mobile_menu .dropdown .dropdown_inner ul li.lang a {
+	color: #00c0ff;
+}
+
+
 .hamburger-inner, 
 .hamburger-inner:after, 
 .hamburger-inner:before{
@@ -450,7 +460,7 @@ h6 { font-size: 16px; }
 .foliox_tm_header .social ul{
 	margin: 0px;
 	list-style-type: none;
-	display: flex;
+	display: block;
 	align-items: center;
 }
 .foliox_tm_header .social ul li{
@@ -470,6 +480,13 @@ h6 { font-size: 16px; }
 }
 .foliox_tm_header .social ul li a:hover{
 	color: var(--extra-color);
+}
+
+
+li.language-dropdown .dropdown-menu li {
+	display: list-item;
+	margin: 10px;
+	margin-left: 0px;
 }
 
 /*---------------------------------------------------*/
@@ -497,6 +514,7 @@ h6 { font-size: 16px; }
 }
 .foliox_tm_hero .name span{
 	color: var(--extra-color);
+	white-space: nowrap;
 }
 .foliox_tm_hero .job{
 	color: #fff;
@@ -763,6 +781,8 @@ h6 { font-size: 16px; }
     float: left;
     padding-left: 2px;
     min-width: calc(100% + 12px);
+	display:flex;
+	flex-direction: row;
 } 
 .foliox_tm_about .right .list > ul > li{
 	margin: 0px;
@@ -774,6 +794,11 @@ h6 { font-size: 16px; }
     margin-left: -2px;
     overflow: hidden;
 } 
+
+.foliox_tm_about .list ul > li {
+	flext: 1;
+}
+
 .foliox_tm_about .right .item{
 	margin: 0px;
 	list-style-type: none;
@@ -2369,6 +2394,29 @@ input[type=number] {
 	.foliox_tm_about .experience{display: none;}
 	.foliox_tm_about .small_image .in{display: none;}
 	.foliox_tm_about .big_image{float: left;}
+	
+	.office_list .container .left-column {
+		flex-basis: 100% ;
+
+		margin-bottom: 10px;
+		padding-bottom: 10px;	
+		height: 100%;
+	}
+	.office_list .container .right-column {
+		display: none;
+	}
+
+
+
+
+
+
+	
+
+	.coro-image {
+	
+			content: url("/img/about/exercise-test.jpg")
+	}
 	.foliox_tm_about{margin-bottom: 165px;}
 	.foliox_tm_counter .counter_list ul li{width: 33.3333%;}
 	.foliox_tm_skills .list{flex-direction: column;}

@@ -32,6 +32,12 @@ jQuery(document).ready(function(){
 	jQuery(window).on('scroll', function(){
 		foliox_tm_progress_line();
 	});
+
+
+	jQuery(".language-dropdown").click(function() {
+		// $("#language-dropdown-menu").css("display", "flex");
+		$("#language-dropdown-menu").toggle();
+	});
 	
 });
 
@@ -48,6 +54,17 @@ function foliox_tm_modalbox(){
 	"use strict";
 	
 	jQuery('.foliox_tm_all_wrap').prepend('<div class="foliox_tm_modalbox"><div class="box_inner"><div class="close"><a href="#"><i class="icon-cancel"></i></a></div><div class="description_wrap"></div></div></div>');
+
+
+	
+							$(document).ready(function() {
+								$('.open-popup-link').magnificPopup({
+									type:'inline',
+									midClick: true
+								});
+							});
+						
+
 }
 
 // -------------------------------------------------
